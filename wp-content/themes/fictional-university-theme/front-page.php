@@ -20,6 +20,7 @@
           $homepageEvents = new WP_Query(array(
             'posts_per_page' => -1,
             'post_type' => 'event',
+            // CUSTOM ORDERING POSTS BY SOMETHING OTHER THAN POST DATE
             'meta_key' => 'event_date',
             'orderby' => 'meta_value_num',
             'order' => 'ASC',
